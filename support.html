@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Thành Mobile - Uy tín mọi nơi</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Thành Mobile</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">All Product</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./admin/product/index.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./support.html">Support</a>
+                    </li>
+
+                </ul>
+
+                <a href="cart.html" class="btn btn-outline-light">Cart (<span id="cart-quantity">0</span>)</a>
+
+                <div id="account-info"></div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <form class="modal fade" id="frm-login" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="username" placeholder="Username" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="submit" class="btn btn-success">Login</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="col_topic">
+        <h2>Chủ đề nổi bật</h2>
+        <ul class="highlight_topic">
+            <li>
+                <label>
+                <i class="ask-android"></i>
+                <h3 >
+                    <a href="/hoi-dap/chu-de/android">Android</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/android/khoi-phuc-reset">
+                                Khôi phục - Reset
+                            </a>
+                    <a href="/hoi-dap/chu-de/android/thu-thuat-meo-su-dung">
+                                Thủ thuật, mẹo - Hướng dẫn sử dụng
+                            </a>
+                    <a href="/hoi-dap/chu-de/android/root-android">
+                                ROOT Android
+                            </a>
+                    <a href="/hoi-dap/chu-de/android/loi-thuong-gap">
+                                Lỗi thường gặp
+                            </a>
+                    <a href="/hoi-dap/chu-de/android/tai-khoan-android">
+                                Tài khoản Android
+                            </a>
+                    <a href="/hoi-dap/chu-de/android/android-9">
+                                Sản phẩm - Phiên bản mới
+                            </a>
+                    <a href="/hoi-dap/chu-de/android/tu-van-chon-mua">
+                                Tư vấn chọn mua
+                            </a>
+                </div>
+
+            </li>
+            <li>
+                <label>
+                <i class="ask-ios"></i>
+                <h3 >
+                    <a href="/hoi-dap/chu-de/iphone-ios">iPhone - iOS</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/iphone-ios/ios-13">
+                                Sản phẩm - Phiên bản mới
+                            </a>
+                    <a href="/hoi-dap/chu-de/iphone-ios/thu-thuat-su-dung">
+                                Thủ thuật, mẹo - Hướng dẫn sử dụng
+                            </a>
+                    <a href="/hoi-dap/chu-de/iphone-ios/apple-id-icloud">
+                                Apple ID - iCloud
+                            </a>
+                    <a href="/hoi-dap/chu-de/iphone-ios/loi-thuong-gap">
+                                Lỗi thường gặp
+                            </a>
+                    <a href="/hoi-dap/chu-de/iphone-ios/jailbreak-ios">
+                                Jailbreak iOS
+                            </a>
+                    <a href="/hoi-dap/chu-de/iphone-ios/tu-van-chon-mua">
+                                Tư vấn chọn mua
+                            </a>
+                </div>
+
+            </li>
+            <li>
+                <label>
+                <i class="iconsocial"></i>
+                <h3 >
+                    <a href="/hoi-dap/chu-de/mang-xa-hoi">Mạng xã hội</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/mang-xa-hoi/line">
+                                Line
+                            </a>
+                    <a href="/hoi-dap/chu-de/mang-xa-hoi/ung-dung-khac">
+                                Ứng dụng khác
+                            </a>
+                    <a href="/hoi-dap/chu-de/mang-xa-hoi/zalo">
+                                Zalo
+                            </a>
+                    <a href="/hoi-dap/chu-de/mang-xa-hoi/youtube">
+                                YouTube
+                            </a>
+                    <a href="/hoi-dap/chu-de/mang-xa-hoi/messenger-facebook">
+                                Messenger Facebook
+                            </a>
+                    <a href="/hoi-dap/chu-de/mang-xa-hoi/facebook">
+                                Facebook / Messenger
+                            </a>
+                    <a href="/hoi-dap/chu-de/mang-xa-hoi/instagram">
+                                Instagram
+                            </a>
+                </div>
+
+            </li>
+            <li>
+                <label>
+                <i class="iconcate-watch"></i>
+                <h3 >
+                    
+                    <a href="/hoi-dap/chu-de/dong-ho-thoi-trang">Đồng hồ - Mắt kính</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/dong-ho-thoi-trang/meo-huong-dan-su-dung">
+                                Mẹo - Hướng dẫn sử dụng
+                            </a>
+                    <a href="/hoi-dap/chu-de/dong-ho-thoi-trang/dong-ho-thong-minh">
+                                Đồng hồ thông minh
+                            </a>
+                    <a href="/hoi-dap/chu-de/dong-ho-thoi-trang/thuong-hieu-dong-san-pham-noi-bat">
+                                Thương hiệu - Dòng sản phẩm nổi bật
+                            </a>
+                    <a href="/hoi-dap/chu-de/dong-ho-thoi-trang/tu-van-chon-mua-san-pham">
+                                Tư vấn chọn mua
+                            </a>
+                </div>
+
+            </li>
+
+            <li>
+                <label>
+                <i class="iconcate-glass"></i>
+                <h3 >
+                    <a href="/hoi-dap/chu-de/mat-kinh-thoi-trang">Mắt kính thời trang</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/mat-kinh-thoi-trang/thuong-hieu-san-pham-noi-bat">
+                                Thương hiệu - sản phẩm nổi bật
+                            </a>
+                    <a href="/hoi-dap/chu-de/mat-kinh-thoi-trang/tu-van-chon-mua">
+                                Tư vấn chọn mua
+                            </a>
+                    <a href="/hoi-dap/chu-de/mat-kinh-thoi-trang/meo-su-dung">
+                                Mẹo sử dụng
+                            </a>
+                </div>
+
+            </li>
+
+            <li>
+                <label>
+                <i class="iconcate-dm"></i>
+                <h3 >
+                    <a href="/hoi-dap/chu-de/dien-may">Điện máy</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/dien-may/tivi">
+                                Tivi
+                            </a>
+                    <a href="/hoi-dap/chu-de/dien-may/tu-lanh">
+                                Tủ lạnh
+                            </a>
+                    <a href="/hoi-dap/chu-de/dien-may/may-lanh">
+                                M&#225;y lạnh
+                            </a>
+                    <a href="/hoi-dap/chu-de/dien-may/may-giat">
+                                M&#225;y giặt
+                            </a>
+                    <a href="/hoi-dap/chu-de/dien-may/gia-dung">
+                                Gia dụng
+                            </a>
+                </div>
+
+            </li>
+
+            <li>
+                <label>
+                <i class="iconcate-print"></i>
+                <h3 >
+                    <a href="/hoi-dap/chu-de/may-in">Máy in</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/may-in/muc-may-in">
+                                Mực máy In
+                            </a>
+                </div>
+
+            </li>
+
+            <li>
+                <label>
+                <i class="ask-pc"></i>
+                <h3 >
+                    
+                    <a href="/hoi-dap/chu-de/pc-laptop-macbook">Máy tính - Laptop - Tablet</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/pc-laptop-macbook/thu-thuat-laptop">
+                                Thủ thuật, mẹo - Hướng dẫn sử dụng
+                            </a>
+                    <a href="/hoi-dap/chu-de/pc-laptop-macbook/windows-10">
+                                PC - Laptop Windows
+                            </a>
+                    <a href="/hoi-dap/chu-de/pc-laptop-macbook/macos-apple">
+                                Máy Mac, MacBook (macOS)
+                            </a>
+                    <a href="/hoi-dap/chu-de/pc-laptop-macbook/tu-van-laptop">
+                                Tư vấn mua sản phẩm
+                            </a>
+                    <a href="/hoi-dap/chu-de/pc-laptop-macbook/may-tinh-bang">
+                                Máy tính bảng
+                            </a>
+                    <a href="/hoi-dap/chu-de/pc-laptop-macbook/san-pham-phien-ban-moi">
+                                Sản phẩm, phiên bản mới
+                            </a>
+                </div>
+
+            </li>
+            <li>
+                <label>
+                <i class="ask-consult"></i>
+                <h3 >
+                    
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham">Phụ kiện và sản phẩm khác</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/sim-so-the-cao">
+                                Sim số - Thẻ cào
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/thu-thuat-meo-huong-dan-su-dung">
+                                Thủ thuật, mẹo - Hướng dẫn sử dụng
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/dong-ho-thong-minh-old">
+                                Đồng hồ thông minh
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/laptop">
+                                Laptop
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/may-tinh-bang">
+                                Máy tính bảng
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/dien-thoai">
+                                Điện thoại
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/may-in-muc-in">
+                                Máy in - Mực in
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/san-pham-khac">
+                                Sản phẩm khác
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/tu-van-chon-mua">
+                                Tư vấn chọn mua
+                            </a>
+                    <a href="/hoi-dap/chu-de/tu-van-mua-san-pham/phu-kien">
+                                Phụ kiện
+                            </a>
+                </div>
+
+            </li>
+            <li>
+                <label>
+                <i class="ask-wiki"></i>
+                <h3 >
+                    <a href="/hoi-dap/chu-de/wiki-thuat-ngu">Wiki - Thuật ngữ</a>
+                </h3>
+            </label>
+
+            </li>
+            <li>
+                <label>
+                
+                
+                    <a href="/hoi-dap/chu-de/thiet-bi-thong-minh">Thiết bị thông minh</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/thiet-bi-thong-minh/smartcar-smart-motor">
+                                Smartcar - Smart Motor
+                            </a>
+                    <a href="/hoi-dap/chu-de/thiet-bi-thong-minh/smarthome">
+                                Smarthome
+                            </a>
+                    <a href="/hoi-dap/chu-de/thiet-bi-thong-minh/phu-kien-thong-minh">
+                                Phụ kiện thông minh
+                            </a>
+                </div>
+
+            </li>
+            <li>
+                <label>
+                
+                
+                <h3 style="margin-top:7px;" >
+                    <a href="/hoi-dap/chu-de/thu-thuat-van-phong">Thủ thuật văn phòng</a>
+                </h3>
+            </label>
+                <div class="subtopic hide">
+                    <a href="/hoi-dap/chu-de/thu-thuat-van-phong/google-sheet">
+                                Google Sheet
+                            </a>
+                    <a href="/hoi-dap/chu-de/thu-thuat-van-phong/word">
+                                Word
+                            </a>
+                </div>
+
+            </li>
+        </ul>
+        <div id="dldingtext">Bạn vui lòng chờ trong giây lát...</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="js/database.js"></script>
+        <script src="js/index.js"></script>
+
+        <script>
+            window.onload = function() {
+                on_load();
+            }
+        </script>
+</body>
+
+</html>
